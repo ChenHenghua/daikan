@@ -34,7 +34,7 @@ customers      | true       | array          |客户数组
 		  "username":"所在网站系统的用户名",
 		  "workunit":"工作单位",
 		  "hasStudyVideo":23,//已观看课件的数量
-		  "video_total": 234, //课件的总数量
+		  "videoTotal": 234, //课件的总数量
 		  "workStatus":"68/34/34/34", //作业完成情况
 		  "xindeStatus":"未来完成", //心得完成情况
 		  "learnStage":"第一学年",//学段
