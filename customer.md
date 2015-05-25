@@ -22,7 +22,9 @@ sclassid       | true	      | string         |班级在网站系统中的编号
 customers      | true       | array          |客户数组
 
 ###<a id="1.5">请求Json示例</a>
-	{
+	{       
+		"pname": "项目名称",
+		"spid": "项目在系统中的id",
 		"className": "班级名称"
 		"sclassid" : "",
 		"customers" : [{
