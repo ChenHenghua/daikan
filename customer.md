@@ -3,7 +3,7 @@
 [1.批量添加客户](#1)
 
 ---
-##<a id="1">1.双向添加好友</a>
+##<a id="1">1.批量添加客户</a>
 
 ###<a id="1.1">URL</a>
 /v1/customer/addCustomerBatch.json
@@ -45,7 +45,7 @@ customers      | true       | array          |客户数组
 		  "subject":"学科",
 		  "user_type":"学员", //用户类型
 		  "last_login": "2015/02/12", //上次登录时间
-		}]
+		},{...},{...}]
 	}
 
 ###<a id="1.6">返回Json示例</a>
