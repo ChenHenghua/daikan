@@ -44,6 +44,7 @@ customers      | true       | array          |客户数组
 		  "loginCount": "登录次数",
 		  "gender": "F",
 		  "title":"职称",
+		  "job":"教师", //职务
 		  "subject":"学科",
 		  "user_type":"学员", //用户类型
 		  "last_login": "2015/02/12", //上次登录时间
