@@ -32,7 +32,9 @@ customers      | true       | array          |客户数组
 		  "password" : "登录密码",
 		  "qq":"10000",
 		  "tel":"13765348726",
-		  "area":"广州市XX县",
+		  "province":"省份",
+		  "city":"城市",
+		  "country":"县区乡镇",
 		  "username":"所在网站系统的用户名",
 		  "workunit":"工作单位",
 		  "hasStudyVideo":23,//已观看课件的数量
