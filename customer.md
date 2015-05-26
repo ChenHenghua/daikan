@@ -29,7 +29,6 @@ customers      | true       | array          |客户数组
 		"sclassid" : "",
 		"customers" : [{
 		  "name" : "姓名",
-		  "password" : "登录密码",
 		  "qq":"10000",
 		  "tel":"13765348726",
 		  "province":"省份",
