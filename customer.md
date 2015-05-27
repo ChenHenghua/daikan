@@ -42,7 +42,7 @@ customers      | true       | array          |客户数组
 		  "xindeStatus":"未来完成", //心得完成情况
 		  "learnStage":"第一学年",//学段
 		  "email": "a@b.com",
-		  "loginCount": "登录次数",
+		  "loginCount": 20, //登录次数
 		  "gender": "F",
 		  "title":"职称",
 		  "job":"教师", //职务
