@@ -25,7 +25,7 @@ customers      | true       | array          |客户数组
 	{       
 		"pname": "项目名称",
 		"spid": "项目在系统中的id",
-		"className": "班级名称"
+		"className": "班级名称",
 		"sclassid" : "",
 		"customers" : [{
 		  "name" : "姓名",
