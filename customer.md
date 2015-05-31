@@ -2,6 +2,8 @@
 
 [1.批量添加客户](#1)
 
+[2.获得班级列表](#2)
+
 ---
 ##<a id="1">1.批量添加客户</a>
 
@@ -66,34 +68,29 @@ customers      | true       | array          |客户数组
 [错误码详见错误码对照表](错误码对照表.md)
 
 ---
-##<a id="2">2.批量双向添加好友</a>
+##<a id="2">2.获得班级列表</a>
 
 ###<a id="2.1">URL</a>
-
+/v1/customer/getClassList.json
 
 ###<a id="2.2">请求方式</a>
-POST
+GET
 
 ###<a id="2.3">Header</a>
 Content-Type : application/json
 
 ###<a id="2.4">请求参数</a>
-     参数      | 必选 	    | 类型及范围     |说明
--------------  | ---------- | -------------  |---------- 
-userIdA        | true	    | string         |用户id
-userIdBatch    | true       | array          |被加的批量用户ID
+无
 
 
 ###<a id="2.5">请求Json示例</a>
-	{
-		"userIdA" : "2342332222",
-		"userIdBatch" :["1342332222","1342332223","1342332224"]
-	}
+无
 
 ###<a id="2.6">返回Json示例</a>
 ####<a id="2.6.1">请求成功</a>
 	{
-		"success":"true"
+		"success":"true",
+		"data":[{},{}]  //每一个{}对应一个class对象
 	}
 
 ####<a id="2.6.2">请求失败</a>
