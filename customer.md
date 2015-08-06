@@ -1,8 +1,10 @@
 #客户模块 
 
-[1.批量添加客户](#1)
+[1.批量添加一个班级的客户](#1)
 
 [2.获得班级列表](#2)
+
+[3.批量添加多个班级的客户](#3)
 
 ---
 ##<a id="1">1.批量添加客户</a>
@@ -94,6 +96,71 @@ Content-Type : application/json
 	}
 
 ####<a id="2.6.2">请求失败</a>
+	{
+		"error_code":"10000",
+		"error_message":"XXXXX"
+	}
+[错误码详见错误码对照表](错误码对照表.md)
+
+---
+##<a id="3">3.批量添加多个班级的客户</a>
+
+### URL
+/v1/customer/addCustomerByMoreClass.json
+
+### 请求方式
+POST
+
+### Header
+Content-Type : application/json
+
+### 请求参数
+     参数      | 必选 	    | 类型及范围     |说明
+-------------  | ---------- | -------------  |---------- 
+spid      | true	      | string         |网站系统中的项目id
+pname       | true	      | string         |项目名称
+customers      | true       | array            |客户数组
+
+
+### 请求Json示例
+{
+  spid : "28",
+  pname : "江门幼儿师范学校学前教育专业幼儿园教师资格证书班",
+  customers : {
+    "1222":[{},{}],   //1222为网站系统中班级编号
+    "1223":[{},{
+	    "username": "baijieying",
+	    "name": "白洁莹",
+	    "hasStudyVideo": 48,
+	    "videoTotal": 226,
+	    "workStatus": "0/0/68/68",
+	    "xindeStatus": "未完成",
+	    "gender": "女",
+	    "workunit": "",
+	    "title": "",
+	    "learnStage": "",
+	    "subject": "",
+	    "job": "",
+	    "tel": "15920175703",
+	    "email": "",
+	    "qq": "",
+	    "province": "广东省",
+	    "city": "广州市",
+	    "country": "广州市",
+	    "userType": "学员",
+	    "loginCount": 42,
+	    "lastLogin": "2015/7/31 13:54:20"
+    }]
+  }
+}
+
+### 返回Json示例
+#### 请求成功
+	{
+		"success":"true"
+	}
+
+#### 请求失败
 	{
 		"error_code":"10000",
 		"error_message":"XXXXX"
