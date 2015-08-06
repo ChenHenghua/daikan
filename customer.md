@@ -123,36 +123,36 @@ customers      | true       | array            |客户数组
 
 
 ### 请求Json示例
-{
-  spid : "28",
-  pname : "江门幼儿师范学校学前教育专业幼儿园教师资格证书班",
-  customers : {
-    "1222":[{},{}],   //1222为网站系统中班级编号
-    "1223":[{},{
-	    "username": "baijieying",
-	    "name": "白洁莹",
-	    "hasStudyVideo": 48,
-	    "videoTotal": 226,
-	    "workStatus": "0/0/68/68",
-	    "xindeStatus": "未完成",
-	    "gender": "女",
-	    "workunit": "",
-	    "title": "",
-	    "learnStage": "",
-	    "subject": "",
-	    "job": "",
-	    "tel": "15920175703",
-	    "email": "",
-	    "qq": "",
-	    "province": "广东省",
-	    "city": "广州市",
-	    "country": "广州市",
-	    "userType": "学员",
-	    "loginCount": 42,
-	    "lastLogin": "2015/7/31 13:54:20"
-    }]
-  }
-}
+	{
+	  spid : "28",
+	  pname : "江门幼儿师范学校学前教育专业幼儿园教师资格证书班",
+	  customers : {
+	    "1222":[{},{}],   //1222为网站系统中班级编号
+	    "1223":[{},{
+		    "username": "baijieying",
+		    "name": "白洁莹",
+		    "hasStudyVideo": 48,
+		    "videoTotal": 226,
+		    "workStatus": "0/0/68/68",
+		    "xindeStatus": "未完成",
+		    "gender": "女",
+		    "workunit": "",
+		    "title": "",
+		    "learnStage": "",
+		    "subject": "",
+		    "job": "",
+		    "tel": "15920175703",
+		    "email": "",
+		    "qq": "",
+		    "province": "广东省",
+		    "city": "广州市",
+		    "country": "广州市",
+		    "userType": "学员",
+		    "loginCount": 42,
+		    "lastLogin": "2015/7/31 13:54:20"
+	    }]
+	  }
+	}
 
 ### 返回Json示例
 #### 请求成功
