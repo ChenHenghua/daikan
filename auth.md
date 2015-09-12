@@ -45,7 +45,7 @@ password       | true	      | string         |密码
 ##<a id="2">2.登出</a>
 
 ### URL
-/v1/auth/logout
+/v1/auth/logout?v=0.12424（随机数）
 
 ### 请求方式
 GET
