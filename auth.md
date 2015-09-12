@@ -2,11 +2,13 @@
 
 [1.登录](#1)
 
+[2.登出](#2)
+
 ---
 ##<a id="1">1.登录</a>
 
 ###<a id="1.1">URL</a>
-/v1/admin/login.json
+/v1/auth/login.json
 
 ###<a id="1.2">请求方式</a>
 POST
@@ -38,3 +40,24 @@ password       | true	      | string         |密码
 		"error_message":"XXXXX"
 	}
 [错误码详见错误码对照表](错误码对照表.md)
+
+---
+##<a id="2">2.登出</a>
+
+### URL
+/v1/auth/logout
+
+### 请求方式
+GET
+
+###<a id="1.3">Header</a>
+Content-Type : application/json
+
+###<a id="1.4">请求参数</a>
+无
+
+### 返回示例
+跳转到登录页面
+
+[错误码详见错误码对照表](错误码对照表.md)
+
