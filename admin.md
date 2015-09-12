@@ -22,8 +22,8 @@ password       | true	      | string         |密码
 
 ###<a id="1.5">请求Json示例</a>
 	{ 
-	  username : "admin",
-	  password : "admin"
+	  "username" : "admin",
+	  "password" : "admin"
 	}
 
 ###<a id="1.6">返回Json示例</a>
