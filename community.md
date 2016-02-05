@@ -24,7 +24,7 @@ communities      | true	      | array         |社区信息列表
 		"communities": [{
 		  "id" : 1,
 		  "isExist" : true,
-		  "mcount" : 123,
+		  "memberCount" : 123,
 		  "name" : "一班",
 		  "type" :"幼师资格班"
 		}]
