@@ -26,7 +26,7 @@ communities      | true	      | array         |社区信息列表
 		  "isExist" : true,
 		  "mcount" : 123,
 		  "name" : '一班',
-		  "type" ：'幼师资格班'
+		  "type" :'幼师资格班'
 		}]
 	}
 
