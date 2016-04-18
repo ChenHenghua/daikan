@@ -210,7 +210,6 @@ start          | true       | int            |记录初始位置
 		    "city" : "xxx",
 		    "tel" : "234234234", //电话
 		    "hasOrder" : true,  //已经下过订单,老客户
-		    "idnum"  : "2313423423", //身份证号
 		    "qq" : 234234,
 		    "email" : "3423@qq.com"
 		  }],
