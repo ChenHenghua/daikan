@@ -186,17 +186,15 @@ Content-Type : application/json
 name           | false	    | string         |用户姓名
 workunit       | false	    | string         |工作单位
 province       | false	    | string         |所在省份
-city           | false	    | string         |所在城市
-country        | false	    | string         |所在县区
+city           | false	    | string         |所在城市、县或者镇
 
 ### 请求Json示例
 	{       
     "name" : "用户的姓名",
     "workunit" : "工作单位,例如蓝天幼儿园",
     "province" : "广东",
-    "city" : "广州",
-    "country" : "越秀区"
-	}
+    "city" : "广州"
+    	}
 
 ### 返回Json示例
 #### 请求成功
