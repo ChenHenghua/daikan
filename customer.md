@@ -202,16 +202,15 @@ city           | false	    | string         |所在城市、县或者镇
 		"success":"true",
 		"data" : {
 		  "customers" : [{
+		    "id" : 1212,
 		    "name" : "张三",
 		    "workunit" : "xxx",
-		    "provice" : "xxxxx",
+		    "provnice" : "xxxxx",
 		    "city" : "xxx",
-		    "country" : "dsfsd",
-		    "phone" : ""
+		    "tel" : "234234234", //电话
 		    "hasOrder" : true,  //已经下过订单,老客户
 		    "idnum"  : "2313423423", //身份证号
 		    "qq" : 234234,
-		    "tel" : "234234234", //电话
 		    "email" : "3423@qq.com"
 		  }],
 		  "count" : 30   //次查询条件下的总记录数
