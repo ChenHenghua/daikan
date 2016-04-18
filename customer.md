@@ -6,6 +6,8 @@
 
 [3.批量添加多个班级的客户](#3)
 
+[4.根据查询条件搜索用户信息](#4)
+
 ---
 ##<a id="1">1.批量添加客户</a>
 
@@ -165,5 +167,63 @@ customers      | true       | array            |客户数组
 		"error_code":"10000",
 		"error_message":"XXXXX"
 	}
+
+---
+##<a id="4">4.根据查询条件搜索用户信息</a>
+
+### URL
+/v1/customer/findByConditions.json
+
+### 请求方式
+POST
+
+### Header
+Content-Type : application/json
+
+### 请求参数
+     参数      | 必选 	    | 类型及范围     |说明
+-------------  | ---------- | -------------  |---------- 
+name           | false	    | string         |用户姓名
+workunit       | false	    | string         |工作单位
+province       | false	    | string         |所在省份
+city           | false	    | string         |所在城市
+country        | false	    | string         |所在县区
+
+### 请求Json示例
+	{       
+    "name" : "用户的姓名",
+    "workunit" : "工作单位,例如蓝天幼儿园",
+    "province" : "广东",
+    "city" : "广州",
+    "country" : "越秀区"
+	}
+
+### 返回Json示例
+#### 请求成功
+	{
+		"success":"true",
+		"data" : {
+		  "customers" : [{
+		    "name" : "张三",
+		    "workunit" : "xxx",
+		    "provice" : "xxxxx",
+		    "city" : "xxx",
+		    "country" : "dsfsd",
+		    "phone" : ""
+		    "hasOrder" : true,  //已经下过订单,老客户
+		    "idnum"  : "2313423423", //身份证号
+		    "qq" : 234234,
+		    "tel" : "234234234", //电话
+		    "email" : "3423@qq.com"
+		  }],
+		  "count" : 30   //次查询条件下的总记录数
+		}
+	}
+
+#### 请求失败
+	{
+		"error_code":"10000",
+		"error_message":"XXXXX"
+	}	
 [错误码详见错误码对照表](错误码对照表.md)
 
