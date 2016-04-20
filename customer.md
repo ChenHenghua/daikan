@@ -8,6 +8,8 @@
 
 [4.根据查询条件搜索用户信息](#4)
 
+[5.新增或修改一个用户的信息](#5)
+
 ---
 ##<a id="1">1.批量添加客户</a>
 
@@ -222,5 +224,49 @@ start          | true       | int            |记录初始位置
 		"error_code":"10000",
 		"error_message":"XXXXX"
 	}	
+
+---
+##<a id="5">5.新增或修改一个用户的信息</a>
+
+### URL
+/v1/customer/saveOrUpdate.json
+
+### 请求方式
+POST
+
+### Header
+Content-Type : application/json
+
+### 请求参数
+     参数      | 必选 	    | 类型及范围     |说明
+-------------  | ---------- | -------------  |---------- 
+id             | false	    | int            |客户ID,在修改用户的时候传入
+sid            | true	    | string         |客户在学习系统中的用户ID
+classId        | true	    | int            |客户在daikan DB中的班级ID
+city           | false	    | string         |所在城市、县或者镇
+province       | false      | string         |身份
+name           | false      | string         |用户姓名
+### 请求Json示例
+	{       
+	    "sid" : "23423423",
+	    "classId" : 12,
+	    "province" : "广东",
+	    "city" : "广州"
+    	}
+
+### 返回Json示例
+#### 请求成功
+	{
+		"success":"true",
+		"data" : {
+		 	"cid" : 324234	
+		}
+	}
+
+#### 请求失败
+	{
+		"error_code":"10000",
+		"error_message":"XXXXX"
+	}		
 [错误码详见错误码对照表](错误码对照表.md)
 
