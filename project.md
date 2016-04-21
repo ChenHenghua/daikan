@@ -49,7 +49,7 @@ Content-Type : application/json
 ##<a id="3">3.添加班级</a>
 
 ### URL
-/v1/project/{pid}/class/new.json
+/v1/project/class/new.json
 
 ### 请求方式
 POST
@@ -60,11 +60,13 @@ Content-Type : application/json
 ### 请求参数
      参数      | 必选 	    | 类型及范围     |说明
 -------------  | ---------- | -------------  |---------- 
+projectId      | true       | int            | 项目ID        
 name           | true       | string         | 班级姓名
 
 ### 请求Json示例
 	{       
-		name : "2班"
+		"projectId" : 6,
+		"name" : "2班"
 	}
 
 ### 返回Json示例
