@@ -4,7 +4,7 @@
 
 [2.通过项目ID获得班级列表](#2)
 
-[3.添加班级](#3)
+[3.添加或修改班级](#3)
 
 ---
 ##<a id="1">1.获取项目列表</a>
@@ -46,45 +46,6 @@ Content-Type : application/json
 	}
 
 ---
-##<a id="3">3.添加班级</a>
-
-### URL
-/v1/project/class/new.json
-
-### 请求方式
-POST
-
-### Header
-Content-Type : application/json
-
-### 请求参数
-     参数      | 必选 	    | 类型及范围     |说明
--------------  | ---------- | -------------  |---------- 
-projectId      | true       | int            | 项目ID        
-name           | true       | string         | 班级姓名
-
-### 请求Json示例
-	{       
-		"projectId" : 6,
-		"name" : "2班"
-	}
-
-### 返回Json示例
-#### 请求成功
-	{
-		"success":"true",
-		"data" : {
-			classId : 112
-		}
-	}
-
-#### 请求失败
-	{
-		"error_code":"10000",
-		"error_message":"XXXXX"
-	}
-	
----
 ##<a id="2">2.通过项目ID获得班级列表</a>
 
 ### URL
@@ -113,6 +74,46 @@ Content-Type : application/json
 		  "projectId" : 123,
 		  "name" : "班级名称"
 		}]
+	}
+
+#### 请求失败
+	{
+		"error_code":"10000",
+		"error_message":"XXXXX"
+	}	
+	
+---
+##<a id="3">3.添加班级</a>
+
+### URL
+/v1/project/class/saveOrUpdate.json
+
+### 请求方式
+POST
+
+### Header
+Content-Type : application/json
+
+### 请求参数
+     参数      | 必选 	    | 类型及范围     |说明
+-------------  | ---------- | -------------  |---------- 
+classId        | false      | int            | 班级ID，修改时必须传入,新增时不传入
+projectId      | false      | int            | 项目ID,新增时必须传入        
+name           | false      | string         | 班级名称,新增时必须传入
+
+### 请求Json示例
+	{       
+		"projectId" : 6,
+		"name" : "2班"
+	}
+
+### 返回Json示例
+#### 请求成功
+	{
+		"success":"true",
+		"data" : {
+			classId : 112
+		}
 	}
 
 #### 请求失败
