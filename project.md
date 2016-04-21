@@ -46,6 +46,43 @@ Content-Type : application/json
 	}
 
 ---
+##<a id="3">3.添加班级</a>
+
+### URL
+/v1/project/{pid}/class/new.json
+
+### 请求方式
+POST
+
+### Header
+Content-Type : application/json
+
+### 请求参数
+     参数      | 必选 	    | 类型及范围     |说明
+-------------  | ---------- | -------------  |---------- 
+name           | true       | string         | 班级姓名
+
+### 请求Json示例
+	{       
+		name : "2班"
+	}
+
+### 返回Json示例
+#### 请求成功
+	{
+		"success":"true",
+		"data" : {
+			classId : 112
+		}
+	}
+
+#### 请求失败
+	{
+		"error_code":"10000",
+		"error_message":"XXXXX"
+	}
+	
+---
 ##<a id="2">2.通过项目ID获得班级列表</a>
 
 ### URL
@@ -80,6 +117,6 @@ Content-Type : application/json
 	{
 		"error_code":"10000",
 		"error_message":"XXXXX"
-	}
+	}	
 [错误码详见错误码对照表](错误码对照表.md)
 
