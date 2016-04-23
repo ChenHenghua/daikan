@@ -189,6 +189,8 @@ name           | false	    | string         |用户姓名
 workunit       | false	    | string         |工作单位
 province       | false	    | string         |所在省份
 city           | false	    | string         |所在城市、县或者镇
+projectId      | false      | int            |项目ID
+classId        | false      | int            |班级ID
 start          | true       | int            |记录初始位置
 ### 请求Json示例
 	{       
