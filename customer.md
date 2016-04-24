@@ -217,7 +217,10 @@ start          | true       | int            |记录初始位置
 		    "qq" : 234234,
 		    "email" : "3423@qq.com",
 		    "projectName" : "幼师资格证培训",
-		    "className" : "12班"
+		    "className" : "12班",
+		    "projectId" : 12,
+		    "classId" : 12,
+		    "username" : "username"
 		  }],
 		  "count" : 30   //次查询条件下的总记录数
 		}
