@@ -125,7 +125,7 @@ name           | false      | string         | 班级名称,新增时必须传�
 	}	
 
 ---
-##<a id="3">3.添加班级</a>
+##<a id="4">4.添加班级</a>
 
 ### URL
 /v1/project/class/create.json
