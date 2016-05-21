@@ -10,6 +10,8 @@
 
 [5.新增或修改一个用户的信息](#5)
 
+[6.通过项目ID和用户在项目所在的网站系统的用户ID查询](#6)
+
 ---
 ##<a id="1">1.批量添加客户</a>
 
@@ -275,5 +277,44 @@ name           | false      | string         |用户姓名
 		"error_code":"10000",
 		"error_message":"XXXXX"
 	}		
+
+---
+##<a id="6">6.通过项目ID和用户在项目所在的网站系统的用户ID查询</a>
+
+### URL
+/v1/customer/findByProjectIdAndSid.json
+
+### 请求方式
+POST
+
+### Header
+Content-Type : application/json
+
+### 请求参数
+     参数      | 必选 	    | 类型及范围     |说明
+-------------  | ---------- | -------------  |---------- 
+projectId      | true	    | int            |项目ID
+sid            | true	    | string         |客户在学习系统中的用户ID
+
+### 请求Json示例
+	{       
+	    "sid" : "440110261851459",
+	    "projectId" : 7
+    	}
+
+### 返回Json示例
+#### 请求成功
+	{
+		"success":"true",
+		"data" : {
+		 	"customers" : [{},{}...]
+		}
+	}
+
+#### 请求失败
+	{
+		"error_code":"10000",
+		"error_message":"XXXXX"
+	}			
 [错误码详见错误码对照表](错误码对照表.md)
 
