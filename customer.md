@@ -14,6 +14,8 @@
 
 [7.通过用户在项目所在的网站系统的用户ID查询](#7)
 
+[8.通过用户在数据库的ID来查找用户](#8)
+
 ---
 ##<a id="1">1.批量添加客户</a>
 
@@ -347,6 +349,42 @@ sid            | true	    | string         |客户在学习系统中的用户ID
 		"success":"true",
 		"data" : {
 		 	"customers" : [{},{}...]
+		}
+	}
+
+#### 请求失败
+	{
+		"error_code":"10000",
+		"error_message":"XXXXX"
+	}				
+
+---
+##<a id="9">8.通过用户在数据库的ID来查找用户</a>
+
+### URL
+/v1/customer/cid/{cid}.json
+
+### 请求方式
+POST
+
+### Header
+Content-Type : application/json
+
+### 请求参数
+     参数      | 必选 	    | 类型及范围     |说明
+-------------  | ---------- | -------------  |---------- 
+cid            | true	    | int            |客户在数据库中的ID
+
+### 请求Json示例
+	/v1/customer/cid/123213.json
+
+### 返回Json示例
+#### 请求成功
+	{
+		"success":"true",
+		"data" : {
+		 	"id": 34234,
+		 	...
 		}
 	}
 
